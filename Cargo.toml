@@ -2,6 +2,11 @@
 name = "rust-video-processor"
 version = "0.1.0"
 edition = "2024"
+license = "GPL-3.0-or-later"
 
 [dependencies]
-eframe = "0.37.0"
+eframe = { version = "0.37.0", features = ["serde"] }
+egui = { version = "0.37.0", features = ["serde"] }
+rand = { version = "0.10.4", features = ["serde"] }
+serde = { version = "1.0.229", features = ["derive"] }
+uuid = { version = "1.29.3", features = ["v4", "serde"] }
